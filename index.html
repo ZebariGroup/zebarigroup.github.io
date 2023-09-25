@@ -252,8 +252,8 @@
               </svg>
             </div> <!-- /.icon -->
             <div class="service-contents">
-              <h3>Modern Design</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>  
+              <h3>Microsoft Azure and Power Platform</h3>
+              <p>Do the cloud the right way. Build or migrate your data to the cloud and scale upwards easily. We can help you work within Microsoft's always growing suite of produtivity tools to develop an IT solution for any of your businesses challenges.</p>  
             </div> <!-- /.service-contents-->
           </a> <!-- /.service -->
 
@@ -415,48 +415,56 @@
         <div class="col-12 text-center">
           <span class="caption">Contact</span>
           <h2 class="heading">Get In Touch</h2>
-          <p>Far from the countries Vokalia and Consonantia</p>
+          <p>We look forward to hearing from you!</p>
         </div>
       </div> <!-- /.row -->
       <div class="row">
 
-        <div class="col-lg-7">
+        <div class="col-lg-7 col-xl-8">
 
 
-          <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <label class="" for="fname">First name</label>
-                  <input type="text" class="form-control" id="fname">
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <label class="" for="lname">Last name</label>
-                  <input type="text" class="form-control" id="lname">
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="" for="email">Email address</label>
-              <input type="email" class="form-control" id="email">
-            </div>
-
-            <div class="form-group">
-              <label class="" for="message">Message</label>
-              <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('Di62qxfgaFDzlNU33');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name or Business</label><br>
+        <input type="text" name="user_name"><br>
+        <label>Email</label><br>
+        <input type="email" name="user_email"><br>
+        <label>How can we help you?</label><br>
+        <textarea name="message"></textarea><br>
+        <input type="submit" value="Send">
+    </form>
         </div> <!-- /.col-lg-7 -->
         <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
           <div class="quick-contact">
             <h3 class="h5 mb-4">Contact Info</h3>
             <address class="text-black d-flex"><span class="mt-1 icon-room mr-2"></span><span>30057 W. 8 Mile Rd., Livonia, MI 48152</span></address>
             <ul class="list-unstyled ul-links mb-4">
-              <li><a href="tel://11234567890" class="d-flex"><span class="mt-1 icon-phone mr-2"></span><span>+1(734)-415-9531</span></a></li>
+              <li><a href="tel://17344159531" class="d-flex"><span class="mt-1 icon-phone mr-2"></span><span>+1(734)-415-9531</span></a></li>
 
               <li><a href="mailto:contact@zebarigroup.com" class="d-flex"><span class="mt-1 icon-envelope mr-2"></span><span>contact@zebarigroup.com</span></a></li>
 
