@@ -437,7 +437,7 @@
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
-                emailjs.sendForm('service_o9tl298', 'template_ujnqv3r', this)
+                emailjs.sendForm('service_o9tl298', 'template_ujnqv3r', '#myform')
                     .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     }, function(error) {
