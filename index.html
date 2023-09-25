@@ -439,7 +439,7 @@
                 // these IDs from the previous steps
                 emailjs.sendForm('service_o9tl298', 'template_ujnqv3r', this)
                     .then(function() {
-                        console.log('SUCCESS!');
+                    console.log('SUCCESS!', response.status, response.text);
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
