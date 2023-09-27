@@ -422,65 +422,11 @@
 
         <div class="col-lg-7 col-xl-8">
 
+<iframe width="740px" height="480px" src="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=7cw7iPPwak6w9THxMGXjYLIf11tOn0VLvAhWL6BWKF5URjNVQjJPVTBVVDBXQlVCUkY3NFlURjU1Vy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('hmK8LNkYewdmr8h52');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_o9tl298', 'template_ujnqv3r', this)
-                    .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
 </head>
 <body>
-    <form id="contact-form">
-        <input type="hidden" name="contact_number">
-        <label>Name or Business</label><br>
-        <input type="text" name="user_name"><br>
-        <label>Email Address</label><br>
-        <input type="email" name="user_email"><br>
-        <label>How can we help you?</label><br>
-        <textarea name="message"></textarea><br>
-        <input type="submit" value="Send">
-		  
-<script type="text/javascript">
-		const form = document.querySelector('form');
-		const thankYouMessage = document.querySelector('#thank-you-message');
-			form.addEventListener('submit', (e) => {
-				e.preventDefault();
-					thankYouMessage.classList.add('show');
-					setTimeout(() => form.submit(), 2000);
-});
-#thank-you-message {
-  display: none;
-}
-
-#thank-you-message.show {
-  display: block;
-}
- <p id="thank-you-message">
-   Thank you for contacting us. We will be in touch with you very soon.
- </p>
- <form action="forms/subscribe.php" method="post">
-   <input type="email" name="email" placeholder="Enter your Email">
-   <input type="submit" value="Subscribe">
- </form></script>
-	
+ 
 	
         </div> <!-- /.col-lg-7 -->
         <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
