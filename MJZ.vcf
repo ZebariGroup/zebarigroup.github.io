@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Matthew James Zebari
+N;CHARSET=UTF-8:Zebari;Matthew;James;;
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:matthew@zebarigroup.com
+TEL;TYPE=CELL:(248) 755-6637
+TEL;TYPE=WORK,VOICE:(734) 415-9531
+ADR;CHARSET=UTF-8;TYPE=WORK:;;30625 W. 8 Mile Rd.;Livonia;Michigan;48152;
+TITLE;CHARSET=UTF-8:Executive IT Consultant
+ROLE;CHARSET=UTF-8:Fractional CIO\, Managed IT Services
+ORG;CHARSET=UTF-8:Zebari Group IT
+URL;type=WORK;CHARSET=UTF-8:www.zebarigroup.com
+REV:2024-12-30T01:24:21.042Z
+END:VCARD
